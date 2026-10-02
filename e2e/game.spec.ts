@@ -4,6 +4,7 @@ import { applyAction, createGame, findLegalMoves } from '../src/game/engine'
 import { freshSave, SAVE_KEY } from '../src/storage'
 import { chooseAction } from '../tools/strategy'
 import type { Action, GameState } from '../src/game/types'
+const screenshotRoot=process.env.PUBLIC_GAME_URL?'docs/public-screenshots':'docs/screenshots'
 
 async function prepare(page:Page,unlocked=1,motion=true):Promise<void>{
   await page.addInitScript(({key,save})=>{if(!localStorage.getItem(key))localStorage.setItem(key,JSON.stringify(save))},{key:SAVE_KEY,save:{...freshSave(),unlocked,reducedMotion:motion,seenTutorials:[1,6,11]}})
@@ -32,7 +33,7 @@ test('home, tutorial, levels and asset paths are usable',async({page},info)=>{
   await page.goto('./?seed=12345');await expect(page.locator('[data-action="start"]')).toBeEnabled()
   await expect(page).toHaveTitle(/奶龙消消乐/)
   await expect(page.locator('h1')).toContainText('消消乐')
-  await page.screenshot({path:`docs/screenshots/${info.project.name}-home.png`,fullPage:true})
+  await page.screenshot({path:`${screenshotRoot}/${info.project.name}-home.png`,fullPage:true})
   await page.locator('[data-action="levels"]').click();await expect(page.locator('.level-card')).toHaveCount(20)
   await expect(page.locator('[data-level="2"]')).toBeDisabled()
   await page.locator('[data-level="1"] .level-title').click()
@@ -53,7 +54,7 @@ test('real pointer exchange, input lock, free hammer and shuffle',async({page},i
   await expect(page.locator('[data-action="shuffle"]')).toBeDisabled()
   const dims=await page.locator('#board').boundingBox();expect(dims!.width).toBeCloseTo(dims!.height,0)
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
-  await page.screenshot({path:`docs/screenshots/${info.project.name}-game.png`,fullPage:true})
+  await page.screenshot({path:`${screenshotRoot}/${info.project.name}-game.png`,fullPage:true})
 })
 test('restart cancels an old animation and pause resumes safely',async({page})=>{
   await prepare(page,1,false);await page.locator('[data-action="start"]').click()
@@ -108,7 +109,7 @@ test('failed level shows retry and replenishes both free tools',async({page},inf
     const next=trials[0];await playAction(page,next.action);s=next.result.state;await expectState(page,s)
   }
   expect(s.status).toBe('lost');await expect(page.locator('#modal')).toContainText('差一点点，再奶一次')
-  await page.screenshot({path:`docs/screenshots/${info.project.name}-loss.png`,fullPage:true})
+  await page.screenshot({path:`${screenshotRoot}/${info.project.name}-loss.png`,fullPage:true})
   await page.locator('#modal [data-action="retry"]').click();await expect(page.locator('#moves')).toHaveText('28')
   await expect(page.locator('[data-action="hammer"]')).toBeEnabled();await expect(page.locator('[data-action="shuffle"]')).toBeEnabled()
 })
@@ -127,7 +128,7 @@ for(const id of [1,5,10,15,20])test(`complete level ${id} through the visible bo
     const action=chooseAction(s);await playAction(page,action);s=applyAction(s,action).state;await expectState(page,s)
   }
   await expect(page.locator('#modal')).toContainText(id===20?'奶龙毕业快乐':'这波，真的熟')
-  if(id===1||id===20)await page.screenshot({path:`docs/screenshots/${info.project.name}-win-${id}.png`,fullPage:true})
+  if(id===1||id===20)await page.screenshot({path:`${screenshotRoot}/${info.project.name}-win-${id}.png`,fullPage:true})
   const saved=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!),SAVE_KEY)
   expect(saved.results[id].score).toBe(s.score);expect(saved.unlocked).toBe(Math.min(20,id+1))
   await page.locator('#modal [data-action="home"]').click();await expect(page.locator('h1')).toBeVisible()

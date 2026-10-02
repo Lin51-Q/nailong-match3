@@ -4,7 +4,9 @@
 
 ## 开始玩
 
-公开网址尚待 GitHub 登录后发布，不能把本地地址当成公开网址。
+**[打开奶龙消消乐](https://lin51-q.github.io/nailong-match3/)** · [源码仓库](https://github.com/Lin51-Q/nailong-match3)
+
+已完成GitHub Pages发布，并在公开网址检查电脑与手机模拟的素材加载、交换、免费道具、通关和刷新存档。玩家打开网址即可玩。
 
 开发电脑安装 Node.js 24，然后在项目目录执行：
 
@@ -28,6 +30,8 @@ npm run preview -- --base=/nailong-match3/
 ```
 
 浏览器测试使用生产构建，覆盖 Chromium 电脑、Chromium 手机模拟、WebKit 手机模拟和本机 Edge。没有安装 Edge 时，可选择前三个项目运行。测试输出截图位于 `docs/screenshots/`，难度模拟见 `docs/simulation.json`。
+
+线上检查可将环境变量 `PUBLIC_GAME_URL` 设置为公开网址后运行相同浏览器测试；此时不启动本地服务，截图保存在 `docs/public-screenshots/`。
 
 直接双击源码的 HTML 不支持模块加载。使用本地服务或公开网址。
 
@@ -60,4 +64,4 @@ npm run preview -- --base=/nailong-match3/
 
 ## 验证边界
 
-详见 [测试报告](docs/TEST_REPORT.md)。手机浏览器模拟不等于真实手机验证。当前项目尚需真实手机上的触摸、声音及浏览器地址栏检查，以及 GitHub 公开网址上线验证。
+详见 [测试报告](docs/TEST_REPORT.md)。手机浏览器模拟不等于真实手机验证。公开网址上线验证已完成；真实手机上的触摸、声音及浏览器地址栏检查仍待用户实机试玩。

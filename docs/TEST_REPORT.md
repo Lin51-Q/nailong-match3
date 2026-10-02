@@ -6,7 +6,7 @@
 
 - 本地游戏、正式素材、手机布局、本机存档：已完成。
 - 类型检查、生产构建、逻辑测试、浏览器交互测试：通过。
-- GitHub公开发布：等待账号授权与发布后验证，不能视为已上线。
+- GitHub公开发布：[公开游戏网址](https://lin51-q.github.io/nailong-match3/)已上线，发布后浏览器检查通过。
 - 真实手机：尚未验证；下述手机检查使用浏览器模拟设备。
 
 ## 自动检查
@@ -59,7 +59,9 @@
 
 ## 发布与后续人工检查
 
-公开网址必须在GitHub授权、Actions部署成功后实际打开检查，尚未完成此项。
+GitHub仓库：[Lin51-Q/nailong-match3](https://github.com/Lin51-Q/nailong-match3)。首轮[发布工作流](https://github.com/Lin51-Q/nailong-match3/actions/runs/37043936787)成功，Pages API返回的真实网址为 `https://lin51-q.github.io/nailong-match3/`。
+
+在该真实公开网址上完成9项检查：Chromium电脑、Chromium手机模拟和WebKit手机模拟，分别检查首页/教学/锁关/全部资源加载、实际交换/输入锁定/免费道具，以及第一关完整通关和刷新后的进度保存，全部通过。线上截图保存在 `docs/public-screenshots/`。这里没有用本地预览地址替代公开地址。
 
 真实手机仍需检查：手指滑动、首次触摸启用声音、刘海安全区、浏览器地址栏收缩、切后台与恢复，以及连续操作流畅度。当前没有连接真实手机，不报告真机成功。
 
