@@ -1,0 +1,210 @@
+{
+  "strategy": "Greedy immediate goal coverage; uses hammer late. No foresight, no human skill estimate.",
+  "seedRange": [
+    100,
+    199
+  ],
+  "seconds": 37,
+  "results": [
+    {
+      "level": 1,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 2.5,
+      "minMoves": 1,
+      "firstWinSeed": 100,
+      "maxScore": 5100
+    },
+    {
+      "level": 2,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 3,
+      "minMoves": 1,
+      "firstWinSeed": 100,
+      "maxScore": 5100
+    },
+    {
+      "level": 3,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 3.4,
+      "minMoves": 1,
+      "firstWinSeed": 100,
+      "maxScore": 5100
+    },
+    {
+      "level": 4,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 3.8,
+      "minMoves": 1,
+      "firstWinSeed": 100,
+      "maxScore": 5100
+    },
+    {
+      "level": 5,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 4.3,
+      "minMoves": 1,
+      "firstWinSeed": 100,
+      "maxScore": 5100
+    },
+    {
+      "level": 6,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 11.9,
+      "minMoves": 2,
+      "firstWinSeed": 100,
+      "maxScore": 14250
+    },
+    {
+      "level": 7,
+      "seeds": 100,
+      "won": 99,
+      "winRate": "99%",
+      "averageMoves": 13.1,
+      "minMoves": 4,
+      "firstWinSeed": 100,
+      "maxScore": 12000
+    },
+    {
+      "level": 8,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 15.4,
+      "minMoves": 3,
+      "firstWinSeed": 100,
+      "maxScore": 13250
+    },
+    {
+      "level": 9,
+      "seeds": 100,
+      "won": 94,
+      "winRate": "94%",
+      "averageMoves": 16.9,
+      "minMoves": 5,
+      "firstWinSeed": 100,
+      "maxScore": 14350
+    },
+    {
+      "level": 10,
+      "seeds": 100,
+      "won": 96,
+      "winRate": "96%",
+      "averageMoves": 18.4,
+      "minMoves": 7,
+      "firstWinSeed": 100,
+      "maxScore": 18050
+    },
+    {
+      "level": 11,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 5.4,
+      "minMoves": 2,
+      "firstWinSeed": 100,
+      "maxScore": 10300
+    },
+    {
+      "level": 12,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 5.9,
+      "minMoves": 2,
+      "firstWinSeed": 100,
+      "maxScore": 9550
+    },
+    {
+      "level": 13,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 7.5,
+      "minMoves": 2,
+      "firstWinSeed": 100,
+      "maxScore": 9900
+    },
+    {
+      "level": 14,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 9,
+      "minMoves": 3,
+      "firstWinSeed": 100,
+      "maxScore": 10500
+    },
+    {
+      "level": 15,
+      "seeds": 100,
+      "won": 99,
+      "winRate": "99%",
+      "averageMoves": 7.9,
+      "minMoves": 3,
+      "firstWinSeed": 100,
+      "maxScore": 17550
+    },
+    {
+      "level": 16,
+      "seeds": 100,
+      "won": 100,
+      "winRate": "100%",
+      "averageMoves": 14.9,
+      "minMoves": 4,
+      "firstWinSeed": 100,
+      "maxScore": 17150
+    },
+    {
+      "level": 17,
+      "seeds": 100,
+      "won": 98,
+      "winRate": "98%",
+      "averageMoves": 18,
+      "minMoves": 7,
+      "firstWinSeed": 100,
+      "maxScore": 14700
+    },
+    {
+      "level": 18,
+      "seeds": 100,
+      "won": 97,
+      "winRate": "97%",
+      "averageMoves": 18.4,
+      "minMoves": 5,
+      "firstWinSeed": 100,
+      "maxScore": 22750
+    },
+    {
+      "level": 19,
+      "seeds": 100,
+      "won": 98,
+      "winRate": "98%",
+      "averageMoves": 20.2,
+      "minMoves": 8,
+      "firstWinSeed": 100,
+      "maxScore": 18750
+    },
+    {
+      "level": 20,
+      "seeds": 100,
+      "won": 95,
+      "winRate": "95%",
+      "averageMoves": 22.6,
+      "minMoves": 9,
+      "firstWinSeed": 100,
+      "maxScore": 18350
+    }
+  ]
+}

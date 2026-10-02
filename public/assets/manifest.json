@@ -1,0 +1,58 @@
+[
+  {
+    "id": "chill",
+    "original": "256d2eca39dbb6fdd84939224f24ab18962b37d9.jpg",
+    "source": "assets/source/chill.png",
+    "web": "assets/chill.webp",
+    "bytes": 5954
+  },
+  {
+    "id": "think",
+    "original": "7ee21c18ebc4b745ef9b6b1289fc1e178b8215e4.jpg",
+    "source": "assets/source/think.png",
+    "web": "assets/think.webp",
+    "bytes": 6464
+  },
+  {
+    "id": "smug",
+    "original": "dfaf382ad40735fa77ff92bdd8510fb30e2408e4.jpg",
+    "source": "assets/source/smug.png",
+    "web": "assets/smug.webp",
+    "bytes": 6312
+  },
+  {
+    "id": "happy",
+    "original": "6949a5efef200fMJ.jpeg",
+    "source": "assets/source/happy.png",
+    "web": "assets/happy.webp",
+    "bytes": 7782
+  },
+  {
+    "id": "laugh",
+    "original": "6949a5ec7621fcFM.jpeg",
+    "source": "assets/source/laugh.png",
+    "web": "assets/laugh.webp",
+    "bytes": 8900
+  },
+  {
+    "id": "pink",
+    "original": "6949a5f0b654cOQt.jpeg",
+    "source": "assets/source/pink.png",
+    "web": "assets/pink.webp",
+    "bytes": 7598
+  },
+  {
+    "id": "rainbow",
+    "original": "v2-2df512e2f54db889c5a2667fd57518b4_r.webp",
+    "source": "assets/source/rainbow.png",
+    "web": "assets/rainbow.webp",
+    "bytes": 8326
+  },
+  {
+    "id": "hero",
+    "original": "e6ef7e08b3de9c824ce36e8b2a81800a18d8436d.jpg",
+    "source": "assets/source/hero.png",
+    "web": "assets/hero.webp",
+    "bytes": 14944
+  }
+]
